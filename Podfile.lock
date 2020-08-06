@@ -1,0 +1,28 @@
+PODS:
+  - MXPagerView (0.2.1)
+  - MXParallaxHeader (1.1.0)
+  - MXSegmentedControl (1.1.0)
+  - MXSegmentedPager (4.0.0):
+    - MXPagerView (~> 0.2)
+    - MXParallaxHeader (~> 1.0)
+    - MXSegmentedControl (~> 1.1)
+
+DEPENDENCIES:
+  - MXSegmentedPager
+
+SPEC REPOS:
+  trunk:
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedControl
+    - MXSegmentedPager
+
+SPEC CHECKSUMS:
+  MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
+  MXParallaxHeader: de3c867e10ba46e8f6e20c8ee1f2a910372b3b94
+  MXSegmentedControl: f39e46199a52cbc03b1c845e150215119f2542f5
+  MXSegmentedPager: 527ee76513c96e6607eebe473fe49b7ab4971616
+
+PODFILE CHECKSUM: a20de685d9ea488b5958405afbe4fb15e84bf7ec
+
+COCOAPODS: 1.8.4

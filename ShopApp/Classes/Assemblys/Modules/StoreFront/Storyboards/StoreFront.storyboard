@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9pB-u4-aPT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MXPagerView-->
+        <scene sceneID="Sg3-Ia-XCT">
+            <objects>
+                <viewController storyboardIdentifier="StoreFrontViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pB-u4-aPT" customClass="StoreFrontViewController" customModule="ShopApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2lX-7j-wp9"/>
+                        <viewControllerLayoutGuide type="bottom" id="hEn-I6-nAP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Kx-EV-NGF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHF-k4-M4z" customClass="MXPagerView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pB-u4-aPT" id="Oyw-xQ-4rh"/>
+                                    <outlet property="delegate" destination="9pB-u4-aPT" id="ljU-R7-zkT"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IHF-k4-M4z" secondAttribute="trailing" id="16b-d4-1Jc"/>
+                            <constraint firstItem="IHF-k4-M4z" firstAttribute="bottom" secondItem="hEn-I6-nAP" secondAttribute="top" id="Ako-D1-4O0"/>
+                            <constraint firstItem="IHF-k4-M4z" firstAttribute="top" secondItem="2lX-7j-wp9" secondAttribute="bottom" id="UdH-NS-bAT"/>
+                            <constraint firstItem="IHF-k4-M4z" firstAttribute="leading" secondItem="5Kx-EV-NGF" secondAttribute="leading" id="odf-bg-lG3"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="MXPagerView" id="D8C-rh-Fec"/>
+                    <navigationItem key="navigationItem" id="4MC-zd-FOy"/>
+                    <connections>
+                        <outlet property="pagerView" destination="IHF-k4-M4z" id="bhm-Kw-CyF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cA-AO-fMf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344.9275362318842" y="-1977.4553571428571"/>
+        </scene>
+    </scenes>
+</document>
